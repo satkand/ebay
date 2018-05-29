@@ -17,6 +17,8 @@ public class loginTest extends loginpage{
 		loginpage.search();
 		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"ADD TO CART\"));").click();;
 		
+		//Asserting sign in page
+		
 		WebElement result= (WebElement) driver.findElementByXPath("//android.widget.TextView[@text='Sign in']");
 		Assert.assertEquals(result.getText(), "Sign in");
 		
